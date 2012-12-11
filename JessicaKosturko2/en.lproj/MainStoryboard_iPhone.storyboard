@@ -4,15 +4,19 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quotes View Controller-->
         <scene sceneID="XQ3-Ev-FWz">
             <objects>
-                <viewController id="5UD-X4-4qX" sceneMemberID="viewController">
+                <viewController id="5UD-X4-4qX" customClass="Quotes_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1t-Vv-AUH">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Great quote!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-Yj-o1N">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Great quote!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-Yj-o1N">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="303" id="Qp5-hm-04g"/>
+                                    <constraint firstAttribute="width" constant="268" id="ZSj-e5-fkN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -20,11 +24,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="162" id="O5u-mM-0aN"/>
-                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="leading" secondItem="V1t-Vv-AUH" secondAttribute="leading" constant="93" id="gC7-Yw-6dr"/>
+                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="centerX" secondItem="V1t-Vv-AUH" secondAttribute="centerX" type="default" id="4W0-UY-z4u"/>
+                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="79" id="xwQ-d7-RYA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dAI-PY-AkV"/>
+                    <connections>
+                        <outlet property="quoteLabel" destination="fy8-Yj-o1N" id="Eeu-nx-qA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGs-z4-a2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +154,7 @@ A strong desire to learn</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="siC-nY-2ed" kind="push" id="Rd0-Us-4yY"/>
+                                    <segue destination="rmb-r6-y6j" kind="push" id="dc9-cq-zZs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmG-vh-ugB">
@@ -234,55 +241,43 @@ A strong desire to learn</string>
             <point key="canvasLocation" x="-138" y="-611"/>
         </scene>
         <!--Collection View Controller-->
-        <scene sceneID="mfX-qx-DbW">
+        <scene sceneID="uzv-J4-T8P">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="siC-nY-2ed" customClass="CollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="xG4-ty-7bh">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="rmb-r6-y6j" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="EZ0-z7-MyQ">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.46911748980000001" green="1" blue="0.4256936617" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T9j-es-Uv5">
-                            <size key="itemSize" width="112" height="101"/>
+                        <color key="backgroundColor" red="1" green="0.94064723737009137" blue="0.72923812099430485" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NHs-oc-EcH">
+                            <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rLT-oc-ZZw">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </collectionViewCell>
+                        </cells>
                         <connections>
-                            <outlet property="dataSource" destination="siC-nY-2ed" id="6yd-HB-dKZ"/>
-                            <outlet property="delegate" destination="siC-nY-2ed" id="oRW-EM-IFc"/>
+                            <outlet property="dataSource" destination="rmb-r6-y6j" id="BGe-1O-dqa"/>
+                            <outlet property="delegate" destination="rmb-r6-y6j" id="IXd-Rr-I3q"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="5WF-Jl-GrP"/>
+                    <navigationItem key="navigationItem" id="AJE-HD-14t"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CfD-CK-wcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zft-iJ-o1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192" y="-720"/>
+            <point key="canvasLocation" x="378" y="-611"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CollectionViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="PageViewController" superclassName="UIPageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PageViewController.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -27,6 +27,7 @@
 		A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375BE1676A606006557C0 /* CollectionViewController.m */; };
 		A37375C21676A8D3006557C0 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C11676A8D3006557C0 /* PageViewController.m */; };
 		A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C41676AC93006557C0 /* CollectionViewCell.m */; };
+		A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		A37375C11676A8D3006557C0 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		A37375C31676AC93006557C0 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		A37375C41676AC93006557C0 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quotes_ViewController.h; sourceTree = "<group>"; };
+		A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quotes_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
+				A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */,
+				A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */,
 				A37375C01676A8D3006557C0 /* PageViewController.h */,
 				A37375C11676A8D3006557C0 /* PageViewController.m */,
 				A37375BD1676A606006557C0 /* CollectionViewController.h */,
@@ -295,6 +300,7 @@
 				A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */,
 				A37375C21676A8D3006557C0 /* PageViewController.m in Sources */,
 				A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */,
+				A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JessicaKosturko2/JessicaKosturko2-Prefix.pch";
 				INFOPLIST_FILE = "JessicaKosturko2/JessicaKosturko2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -421,6 +428,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JessicaKosturko2/JessicaKosturko2-Prefix.pch";
 				INFOPLIST_FILE = "JessicaKosturko2/JessicaKosturko2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -479,6 +487,7 @@
 				A37375B91676A500006557C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A37375BA1676A500006557C0 /* Build configuration list for PBXNativeTarget "JessicaKosturko2Tests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +496,7 @@
 				A37375BC1676A500006557C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
