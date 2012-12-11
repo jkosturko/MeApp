@@ -24,6 +24,9 @@
 		A37375A91676A500006557C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375811676A4FF006557C0 /* Foundation.framework */; };
 		A37375B11676A500006557C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A37375AF1676A500006557C0 /* InfoPlist.strings */; };
 		A37375B41676A500006557C0 /* JessicaKosturko2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375B31676A500006557C0 /* JessicaKosturko2Tests.m */; };
+		A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375BE1676A606006557C0 /* CollectionViewController.m */; };
+		A37375C21676A8D3006557C0 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C11676A8D3006557C0 /* PageViewController.m */; };
+		A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C41676AC93006557C0 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		A37375B01676A500006557C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A37375B21676A500006557C0 /* JessicaKosturko2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JessicaKosturko2Tests.h; sourceTree = "<group>"; };
 		A37375B31676A500006557C0 /* JessicaKosturko2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JessicaKosturko2Tests.m; sourceTree = "<group>"; };
+		A37375BD1676A606006557C0 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		A37375BE1676A606006557C0 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		A37375C01676A8D3006557C0 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		A37375C11676A8D3006557C0 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		A37375C31676AC93006557C0 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		A37375C41676AC93006557C0 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,12 @@
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
+				A37375C01676A8D3006557C0 /* PageViewController.h */,
+				A37375C11676A8D3006557C0 /* PageViewController.m */,
+				A37375BD1676A606006557C0 /* CollectionViewController.h */,
+				A37375BE1676A606006557C0 /* CollectionViewController.m */,
+				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
+				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
 				A373759A1676A4FF006557C0 /* MainStoryboard_iPad.storyboard */,
 				A373759D1676A500006557C0 /* ViewController.h */,
 				A373759E1676A500006557C0 /* ViewController.m */,
@@ -277,6 +292,9 @@
 				A373758C1676A4FF006557C0 /* main.m in Sources */,
 				A37375901676A4FF006557C0 /* AppDelegate.m in Sources */,
 				A373759F1676A500006557C0 /* ViewController.m in Sources */,
+				A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */,
+				A37375C21676A8D3006557C0 /* PageViewController.m in Sources */,
+				A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
