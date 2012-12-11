@@ -20,8 +20,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="247" id="FYd-7o-pVK"/>
-                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="leading" secondItem="V1t-Vv-AUH" secondAttribute="leading" constant="98" id="exG-Po-ZCI"/>
+                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="162" id="O5u-mM-0aN"/>
+                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="leading" secondItem="V1t-Vv-AUH" secondAttribute="leading" constant="93" id="gC7-Yw-6dr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dAI-PY-AkV"/>
