@@ -29,13 +29,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //take quotes from Tumblr feed
     NSDictionary *quotesJson = [self getQuotesfromTublr];
     
-    NSArray *quoteTextArray = [[[quotesJson valueForKey:@"response"] valueForKey:@"posts"] valueForKey:@"text"];
-    
-    int randNumb =  (arc4random() % ([quoteTextArray count]-0+1)) + 0 ;
-
-    _quoteLabel.text =  [quoteTextArray objectAtIndex:randNumb];
+    //Set Quote Text
+    _quoteLabel.text = [self extractRandomQuoteFromJSON:quotesJson];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,21 +43,49 @@
 }
 
 - (NSDictionary *)getQuotesfromTublr {
-    NSData *tumblrQuotes = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://api.tumblr.com/v2/blog/jessicakosturko.tumblr.com/posts/quote?api_key=sJ9SZ1WpUGIN3cvfUNeg4SzjPpktwGeJxzTXE6c4gBuzOyTC8u"]];
+    NSData *tumblrQuotes = [NSData dataWithContentsOfURL:[NSURL URLWithString:[@"http://api.tumblr.com/v2/blog/jessicakosturko.tumblr.com/posts/quote?api_key=sJ9SZ1WpUGIN3cvfUNeg4SzjPpktwGeJxzTXE6c4gBuzOyTC8u" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     
     NSDictionary *quotesJson = nil;
     if (tumblrQuotes) {
         quotesJson = [NSJSONSerialization JSONObjectWithData:tumblrQuotes options:kNilOptions error:nil];
     }
     
-
-    
     return quotesJson;
 }
 
-- (void)removeEntitiesFromHTML {
-
+- (NSString *)extractRandomQuoteFromJSON:(NSDictionary *)tumblrDictionary {
+   
+    //extract quote from text field in Dictionary
+    NSArray *quoteTextArray = [[[tumblrDictionary valueForKey:@"response"] valueForKey:@"posts"] valueForKey:@"text"];
     
+    //Randomize quote
+    int randNumb =  (arc4random() % ([quoteTextArray count]-0+1)) + 0 ;
+    NSString *nextquote = [quoteTextArray objectAtIndex:randNumb];
+    
+    return [self stringByStrippingHTML:nextquote];
+    
+}
+
+- (NSString *)stringByStrippingHTML:(NSString *)inputString
+{
+    NSMutableString *outString;
+    
+    if (inputString)
+    {
+        outString = [[NSMutableString alloc] initWithString:inputString];
+        
+        if ([inputString length] > 0)
+        {
+            NSRange r;
+            
+            while ((r = [outString rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+            {
+                [outString deleteCharactersInRange:r];
+            }      
+        }
+    }
+    
+    return outString; 
 }
 
 @end

@@ -11,4 +11,6 @@
 @interface Quotes_ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *quoteLabel;
 
+- (NSString *)stringByStrippingHTML:(NSString *)inputString;
+
 @end
