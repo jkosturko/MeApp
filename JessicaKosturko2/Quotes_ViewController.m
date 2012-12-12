@@ -61,6 +61,8 @@
     //Randomize quote
     int randNumb =  (arc4random() % ([quoteTextArray count]-0+1)) + 0 ;
     NSString *nextquote = [quoteTextArray objectAtIndex:randNumb];
+ //   [nextquote string]
+    NSLog(@"%@", nextquote);
     
     return [self stringByStrippingHTML:nextquote];
     

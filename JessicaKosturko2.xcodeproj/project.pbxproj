@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34FA61D167928030043E6D7 /* iphone1.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61C167928030043E6D7 /* iphone1.png */; };
+		A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61E167929FD0043E6D7 /* graybackground.png */; };
+		A34FA62116792B940043E6D7 /* bluebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA62016792B940043E6D7 /* bluebackground.png */; };
 		A37375801676A4FF006557C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A373757F1676A4FF006557C0 /* UIKit.framework */; };
 		A37375821676A4FF006557C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375811676A4FF006557C0 /* Foundation.framework */; };
 		A37375841676A4FF006557C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375831676A4FF006557C0 /* CoreGraphics.framework */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A34FA61C167928030043E6D7 /* iphone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone1.png; sourceTree = "<group>"; };
+		A34FA61E167929FD0043E6D7 /* graybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graybackground.png; sourceTree = "<group>"; };
+		A34FA62016792B940043E6D7 /* bluebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebackground.png; sourceTree = "<group>"; };
 		A373757B1676A4FF006557C0 /* JessicaKosturko2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JessicaKosturko2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A373757F1676A4FF006557C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A37375811676A4FF006557C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,9 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A34FA6161679262E0043E6D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A34FA62016792B940043E6D7 /* bluebackground.png */,
+				A34FA61E167929FD0043E6D7 /* graybackground.png */,
+				A34FA61C167928030043E6D7 /* iphone1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		A37375701676A4FF006557C0 = {
 			isa = PBXGroup;
 			children = (
+				A34FA6161679262E0043E6D7 /* Images */,
 				A37375851676A4FF006557C0 /* JessicaKosturko2 */,
 				A37375AC1676A500006557C0 /* JessicaKosturko2Tests */,
 				A373757E1676A4FF006557C0 /* Frameworks */,
@@ -260,6 +277,9 @@
 				A37375961676A4FF006557C0 /* Default-568h@2x.png in Resources */,
 				A37375991676A4FF006557C0 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A373759C1676A500006557C0 /* MainStoryboard_iPad.storyboard in Resources */,
+				A34FA61D167928030043E6D7 /* iphone1.png in Resources */,
+				A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */,
+				A34FA62116792B940043E6D7 /* bluebackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

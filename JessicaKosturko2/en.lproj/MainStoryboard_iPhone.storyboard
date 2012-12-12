@@ -12,7 +12,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Great quote!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-Yj-o1N">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iphone1.png" translatesAutoresizingMaskIntoConstraints="NO" id="7nH-On-C92">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="509" id="7WP-8H-MXn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hey there" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-Yj-o1N">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="303" id="Qp5-hm-04g"/>
                                     <constraint firstAttribute="width" constant="268" id="ZSj-e5-fkN"/>
@@ -24,7 +29,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="centerX" secondItem="V1t-Vv-AUH" secondAttribute="centerX" type="default" id="4W0-UY-z4u"/>
+                            <constraint firstItem="7nH-On-C92" firstAttribute="leading" secondItem="V1t-Vv-AUH" secondAttribute="leading" type="default" id="R06-Kx-WAF"/>
+                            <constraint firstItem="7nH-On-C92" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" type="default" id="Z1h-4v-ioq"/>
+                            <constraint firstItem="fy8-Yj-o1N" firstAttribute="centerX" secondItem="7nH-On-C92" secondAttribute="centerX" type="default" id="fWQ-4l-YYa"/>
                             <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="79" id="xwQ-d7-RYA"/>
                         </constraints>
                     </view>
@@ -70,6 +77,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="graybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="NuQ-Wx-SPV"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="283" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="171" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-aQ-rHG">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="AZ4-bg-Unw"/>
@@ -80,8 +88,8 @@ Enthusiastic
 Energetic
 Geek
 A strong desire to learn</string>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.54054829469999999" blue="0.58779658580000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-ao-3bJ">
@@ -95,17 +103,20 @@ A strong desire to learn</string>
 3. Optimism
 
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                <color key="textColor" red="0.93725496529999996" green="0.49019610879999997" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cf8-aQ-rHG" firstAttribute="leading" secondItem="uNG-h6-kBZ" secondAttribute="leading" constant="34" id="APv-Rl-0mE"/>
+                            <constraint firstItem="fJF-ao-3bJ" firstAttribute="top" secondItem="uNG-h6-kBZ" secondAttribute="top" constant="208" id="Afp-R2-IGr"/>
+                            <constraint firstItem="NuQ-Wx-SPV" firstAttribute="leading" secondItem="uNG-h6-kBZ" secondAttribute="leading" type="default" id="W9E-XR-gbu"/>
                             <constraint firstItem="fJF-ao-3bJ" firstAttribute="leading" secondItem="Cf8-aQ-rHG" secondAttribute="leading" type="default" id="Xez-BY-SJt"/>
+                            <constraint firstItem="NuQ-Wx-SPV" firstAttribute="top" secondItem="uNG-h6-kBZ" secondAttribute="top" type="default" id="YyB-yH-IWi"/>
+                            <constraint firstItem="NuQ-Wx-SPV" firstAttribute="bottom" secondItem="uNG-h6-kBZ" secondAttribute="bottom" type="default" id="Zs7-cM-3B9"/>
+                            <constraint firstItem="Cf8-aQ-rHG" firstAttribute="leading" secondItem="uNG-h6-kBZ" secondAttribute="leading" constant="34" id="c5y-2Y-aQu"/>
                             <constraint firstItem="Cf8-aQ-rHG" firstAttribute="top" secondItem="uNG-h6-kBZ" secondAttribute="top" constant="55" id="ovP-yu-a4F"/>
-                            <constraint firstItem="fJF-ao-3bJ" firstAttribute="top" secondItem="uNG-h6-kBZ" secondAttribute="top" constant="191" id="sMV-Nk-Yhg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="0ix-dy-aPv">
@@ -114,7 +125,7 @@ A strong desire to learn</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uV-Hv-Fb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-496" y="-559"/>
+            <point key="canvasLocation" x="-493" y="-1071"/>
         </scene>
         <!--View Controller - Jessica Kosturko-->
         <scene sceneID="5">
@@ -124,30 +135,44 @@ A strong desire to learn</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jka-fZ-FQA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bluebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="u3l-uK-U1o"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jka-fZ-FQA">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="Q1o-ZO-y6A"/>
                                     <constraint firstAttribute="height" constant="75" id="uJB-6h-kgg"/>
-                                    <constraint firstAttribute="width" constant="87" id="xWg-Rb-7lI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Quotes">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Quotes">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="5UD-X4-4qX" kind="push" id="ALn-ao-xGg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6n8-he-q96">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6n8-he-q96">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="GUE-1B-ZMs"/>
+                                    <constraint firstAttribute="height" constant="80" id="EGm-JX-10Y"/>
+                                    <constraint firstAttribute="width" constant="95" id="RcN-XN-hTf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Photos">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Photos">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -157,17 +182,20 @@ A strong desire to learn</string>
                                     <segue destination="rmb-r6-y6j" kind="push" id="dc9-cq-zZs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmG-vh-ugB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmG-vh-ugB">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="95" id="INZ-Jo-3rb"/>
+                                    <constraint firstAttribute="width" constant="95" id="axL-pS-cwR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Career">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Career">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="pBF-ml-wc0" kind="push" id="ari-JR-DTk"/>
@@ -186,24 +214,36 @@ A strong desire to learn</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwy-Vf-jua">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Hobbies">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwy-Vf-jua">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="EpU-qP-Hth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Hobbies">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJV-hH-he4">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="About">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJV-hH-he4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="jeV-VH-TPH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="About">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="Vb8-LM-v6h" kind="push" id="5Uh-My-a3x"/>
@@ -212,25 +252,25 @@ A strong desire to learn</string>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6n8-he-q96" firstAttribute="bottom" secondItem="jka-fZ-FQA" secondAttribute="bottom" type="default" id="5eE-14-qoh"/>
-                            <constraint firstItem="wwy-Vf-jua" firstAttribute="leading" secondItem="6n8-he-q96" secondAttribute="leading" type="default" id="5y4-bM-gBN"/>
-                            <constraint firstItem="wwy-Vf-jua" firstAttribute="top" secondItem="fGW-cv-eNo" secondAttribute="top" type="default" id="6gk-BV-pRx"/>
-                            <constraint firstItem="nmG-vh-ugB" firstAttribute="bottom" secondItem="6n8-he-q96" secondAttribute="bottom" type="default" id="BbC-Sc-X1I"/>
-                            <constraint firstItem="wwy-Vf-jua" firstAttribute="bottom" secondItem="fGW-cv-eNo" secondAttribute="bottom" type="default" id="LHw-XA-E3e"/>
-                            <constraint firstItem="fGW-cv-eNo" firstAttribute="trailing" secondItem="jka-fZ-FQA" secondAttribute="trailing" type="default" id="Lj4-dd-UJ6"/>
-                            <constraint firstItem="nmG-vh-ugB" firstAttribute="leading" secondItem="6n8-he-q96" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="NGJ-1q-OF1"/>
-                            <constraint firstItem="eJV-hH-he4" firstAttribute="bottom" secondItem="wwy-Vf-jua" secondAttribute="bottom" type="default" id="Ofr-8J-9xX"/>
-                            <constraint firstItem="eJV-hH-he4" firstAttribute="trailing" secondItem="nmG-vh-ugB" secondAttribute="trailing" type="default" id="Qe6-2o-4AI"/>
-                            <constraint firstItem="eJV-hH-he4" firstAttribute="leading" secondItem="nmG-vh-ugB" secondAttribute="leading" type="default" id="Wty-2J-pue"/>
-                            <constraint firstItem="fGW-cv-eNo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XH6-du-8df"/>
-                            <constraint firstItem="6n8-he-q96" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Xgb-Mw-SOw"/>
-                            <constraint firstItem="6n8-he-q96" firstAttribute="top" secondItem="jka-fZ-FQA" secondAttribute="top" type="default" id="cic-Hv-bBA"/>
-                            <constraint firstItem="fGW-cv-eNo" firstAttribute="top" secondItem="3" secondAttribute="top" constant="225" id="gCb-Gl-lCH"/>
-                            <constraint firstItem="nmG-vh-ugB" firstAttribute="top" secondItem="6n8-he-q96" secondAttribute="top" type="default" id="huS-om-bbG"/>
-                            <constraint firstItem="jka-fZ-FQA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tbH-2w-Vv0"/>
-                            <constraint firstItem="eJV-hH-he4" firstAttribute="top" secondItem="wwy-Vf-jua" secondAttribute="top" type="default" id="uts-mk-Kmg"/>
-                            <constraint firstItem="jka-fZ-FQA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="62" id="yWb-ke-nZV"/>
-                            <constraint firstItem="eJV-hH-he4" firstAttribute="leading" secondItem="wwy-Vf-jua" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yxQ-eI-BMJ"/>
+                            <constraint firstItem="wwy-Vf-jua" firstAttribute="top" secondItem="3" secondAttribute="top" constant="227" id="18e-s8-I54"/>
+                            <constraint firstItem="u3l-uK-U1o" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="F80-Ah-8bh"/>
+                            <constraint firstItem="eJV-hH-he4" firstAttribute="trailing" secondItem="jka-fZ-FQA" secondAttribute="trailing" type="default" id="GqF-kh-7sP"/>
+                            <constraint firstItem="eJV-hH-he4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="127" id="HqU-dm-vMn"/>
+                            <constraint firstItem="wwy-Vf-jua" firstAttribute="trailing" secondItem="6n8-he-q96" secondAttribute="trailing" type="default" id="KNb-nc-zyr"/>
+                            <constraint firstItem="6n8-he-q96" firstAttribute="top" secondItem="eJV-hH-he4" secondAttribute="top" type="default" id="MmZ-M5-65S"/>
+                            <constraint firstItem="eJV-hH-he4" firstAttribute="leading" secondItem="jka-fZ-FQA" secondAttribute="leading" type="default" id="UjR-fA-Oe6"/>
+                            <constraint firstItem="wwy-Vf-jua" firstAttribute="bottom" secondItem="fGW-cv-eNo" secondAttribute="bottom" type="default" id="Y8R-Eg-qf6"/>
+                            <constraint firstAttribute="trailing" secondItem="6n8-he-q96" secondAttribute="trailing" constant="42" id="Zls-nc-WZH"/>
+                            <constraint firstItem="nmG-vh-ugB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="aom-wD-laZ"/>
+                            <constraint firstItem="fGW-cv-eNo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="25" id="bsw-DG-D5M"/>
+                            <constraint firstItem="fGW-cv-eNo" firstAttribute="leading" secondItem="eJV-hH-he4" secondAttribute="leading" type="default" id="eF4-nP-fXS"/>
+                            <constraint firstItem="u3l-uK-U1o" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="ifr-jr-1xC"/>
+                            <constraint firstItem="wwy-Vf-jua" firstAttribute="leading" secondItem="6n8-he-q96" secondAttribute="leading" type="default" id="naI-I8-bXA"/>
+                            <constraint firstItem="nmG-vh-ugB" firstAttribute="bottom" secondItem="jka-fZ-FQA" secondAttribute="bottom" type="default" id="vDG-Ls-wMS"/>
+                            <constraint firstItem="jka-fZ-FQA" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="wYu-Pk-hOe"/>
+                            <constraint firstItem="fGW-cv-eNo" firstAttribute="trailing" secondItem="eJV-hH-he4" secondAttribute="trailing" type="default" id="xKe-kv-hd3"/>
+                            <constraint firstItem="u3l-uK-U1o" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="xbE-rf-zkE"/>
+                            <constraint firstAttribute="trailing" secondItem="nmG-vh-ugB" secondAttribute="trailing" constant="49" id="yZl-WO-1zK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Jessica Kosturko" id="X4z-1P-fyq"/>
@@ -238,7 +278,7 @@ A strong desire to learn</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <navigationItem id="lYp-M2-N0U"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="-611"/>
+            <point key="canvasLocation" x="-94" y="-1064"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="uzv-J4-T8P">
@@ -278,6 +318,43 @@ A strong desire to learn</string>
             <point key="canvasLocation" x="378" y="-611"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bluebackground.png" width="320" height="480"/>
+        <image name="graybackground.png" width="320" height="480"/>
+        <image name="iphone1.png" width="320" height="480"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PageViewController" superclassName="UIPageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PageViewController.h"/>
+        </class>
+        <class className="Quotes_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Quotes_ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="quoteLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
