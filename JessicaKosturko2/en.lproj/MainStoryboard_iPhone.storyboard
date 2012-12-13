@@ -18,6 +18,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hey there" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-Yj-o1N">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="303" id="Qp5-hm-04g"/>
                                     <constraint firstAttribute="width" constant="268" id="ZSj-e5-fkN"/>
@@ -25,15 +26,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fho-8j-f7s" appends="YES" id="stC-ya-oDv"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="7nH-On-C92" firstAttribute="leading" secondItem="V1t-Vv-AUH" secondAttribute="leading" type="default" id="R06-Kx-WAF"/>
                             <constraint firstItem="7nH-On-C92" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" type="default" id="Z1h-4v-ioq"/>
                             <constraint firstItem="fy8-Yj-o1N" firstAttribute="centerX" secondItem="7nH-On-C92" secondAttribute="centerX" type="default" id="fWQ-4l-YYa"/>
                             <constraint firstItem="fy8-Yj-o1N" firstAttribute="top" secondItem="V1t-Vv-AUH" secondAttribute="top" constant="79" id="xwQ-d7-RYA"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fho-8j-f7s" appends="YES" id="hsi-h7-stR"/>
+                            <outletCollection property="gestureRecognizers" destination="fho-8j-f7s" appends="YES" id="8mz-bU-Jcs"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="dAI-PY-AkV"/>
                     <connections>
@@ -41,8 +50,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGs-z4-a2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="fho-8j-f7s">
+                    <connections>
+                        <action selector="swipeQuoteGesture:" destination="5UD-X4-4qX" id="CwD-FZ-itI"/>
+                        <outlet property="delegate" destination="fy8-Yj-o1N" id="YqV-QW-V5s"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="92" y="83"/>
+            <point key="canvasLocation" x="-79" y="51"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZhQ-PB-JDx">
@@ -57,17 +72,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7MZ-Gs-a1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-852" y="-620"/>
-        </scene>
-        <!--Page View Controller - Resume-->
-        <scene sceneID="nIm-7E-a8y">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Resume" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="pBF-ml-wc0" customClass="PageViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="w1P-Ib-1cX"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tRM-Qo-uIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-614" y="-87"/>
+            <point key="canvasLocation" x="-938" y="-1045"/>
         </scene>
         <!--View Controller - About-->
         <scene sceneID="ayU-Tu-wxc">
@@ -197,9 +202,6 @@ A strong desire to learn</string>
                                         </fragment>
                                     </attributedString>
                                 </state>
-                                <connections>
-                                    <segue destination="pBF-ml-wc0" kind="push" id="ari-JR-DTk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-cv-eNo">
                                 <constraints>
@@ -327,12 +329,10 @@ A strong desire to learn</string>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="PageViewController" superclassName="UIPageViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PageViewController.h"/>
-        </class>
         <class className="Quotes_ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Quotes_ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="swipeQuoteGesture:" candidateClass="UISwipeGestureRecognizer"/>
                 <relationship kind="outlet" name="quoteLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Quotes_ViewController : UIViewController
+@interface Quotes_ViewController : UIViewController {
+    NSDictionary *quotesJson;
+}
+
 @property (strong, nonatomic) IBOutlet UILabel *quoteLabel;
 
 - (NSString *)stringByStrippingHTML:(NSString *)inputString;
+- (IBAction)swipeQuoteGesture:(UISwipeGestureRecognizer *)sender;
 
 @end

@@ -10,6 +10,8 @@
 		A34FA61D167928030043E6D7 /* iphone1.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61C167928030043E6D7 /* iphone1.png */; };
 		A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61E167929FD0043E6D7 /* graybackground.png */; };
 		A34FA62116792B940043E6D7 /* bluebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA62016792B940043E6D7 /* bluebackground.png */; };
+		A34FA678167945450043E6D7 /* pageViewFirstPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A34FA676167945450043E6D7 /* pageViewFirstPage.m */; };
+		A34FA679167945450043E6D7 /* pageViewFirstPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = A34FA677167945450043E6D7 /* pageViewFirstPage.xib */; };
 		A37375801676A4FF006557C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A373757F1676A4FF006557C0 /* UIKit.framework */; };
 		A37375821676A4FF006557C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375811676A4FF006557C0 /* Foundation.framework */; };
 		A37375841676A4FF006557C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375831676A4FF006557C0 /* CoreGraphics.framework */; };
@@ -47,6 +49,9 @@
 		A34FA61C167928030043E6D7 /* iphone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone1.png; sourceTree = "<group>"; };
 		A34FA61E167929FD0043E6D7 /* graybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graybackground.png; sourceTree = "<group>"; };
 		A34FA62016792B940043E6D7 /* bluebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebackground.png; sourceTree = "<group>"; };
+		A34FA675167945450043E6D7 /* pageViewFirstPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pageViewFirstPage.h; sourceTree = "<group>"; };
+		A34FA676167945450043E6D7 /* pageViewFirstPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pageViewFirstPage.m; sourceTree = "<group>"; };
+		A34FA677167945450043E6D7 /* pageViewFirstPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pageViewFirstPage.xib; sourceTree = "<group>"; };
 		A373757B1676A4FF006557C0 /* JessicaKosturko2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JessicaKosturko2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A373757F1676A4FF006557C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A37375811676A4FF006557C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +156,9 @@
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
+				A34FA675167945450043E6D7 /* pageViewFirstPage.h */,
+				A34FA676167945450043E6D7 /* pageViewFirstPage.m */,
+				A34FA677167945450043E6D7 /* pageViewFirstPage.xib */,
 				A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */,
 				A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */,
 				A37375C01676A8D3006557C0 /* PageViewController.h */,
@@ -280,6 +288,7 @@
 				A34FA61D167928030043E6D7 /* iphone1.png in Resources */,
 				A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */,
 				A34FA62116792B940043E6D7 /* bluebackground.png in Resources */,
+				A34FA679167945450043E6D7 /* pageViewFirstPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +330,7 @@
 				A37375C21676A8D3006557C0 /* PageViewController.m in Sources */,
 				A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */,
 				A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */,
+				A34FA678167945450043E6D7 /* pageViewFirstPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,10 +30,9 @@
 	// Do any additional setup after loading the view.
     
     //take quotes from Tumblr feed
-    NSDictionary *quotesJson = [self getQuotesfromTublr];
+    quotesJson = [self getQuotesfromTublr];
     
-    //Set Quote Text
-    _quoteLabel.text = [self extractRandomQuoteFromJSON:quotesJson];
+    [self getNextQuote];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,10 +41,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)getNextQuote {
+    
+    //Set Quote Text
+    _quoteLabel.text = [self extractRandomQuoteFromJSON:quotesJson];
+}
+
 - (NSDictionary *)getQuotesfromTublr {
     NSData *tumblrQuotes = [NSData dataWithContentsOfURL:[NSURL URLWithString:[@"http://api.tumblr.com/v2/blog/jessicakosturko.tumblr.com/posts/quote?api_key=sJ9SZ1WpUGIN3cvfUNeg4SzjPpktwGeJxzTXE6c4gBuzOyTC8u" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     
-    NSDictionary *quotesJson = nil;
     if (tumblrQuotes) {
         quotesJson = [NSJSONSerialization JSONObjectWithData:tumblrQuotes options:kNilOptions error:nil];
     }
@@ -61,8 +65,6 @@
     //Randomize quote
     int randNumb =  (arc4random() % ([quoteTextArray count]-0+1)) + 0 ;
     NSString *nextquote = [quoteTextArray objectAtIndex:randNumb];
- //   [nextquote string]
-    NSLog(@"%@", nextquote);
     
     return [self stringByStrippingHTML:nextquote];
     
@@ -88,6 +90,11 @@
     }
     
     return outString; 
+}
+
+- (IBAction)swipeQuoteGesture:(UISwipeGestureRecognizer *)sender {
+
+    [self getNextQuote];
 }
 
 @end
