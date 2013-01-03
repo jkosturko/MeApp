@@ -7,6 +7,7 @@
 //
 
 #import "PictureCategories_TableViewController.h"
+#import "PhotoTableDetail_ViewController.h"
 
 @interface PictureCategories_TableViewController ()
 
@@ -28,7 +29,7 @@
 
 - (void)viewDidLoad
 {
-    imageCategories = [[NSArray alloc] initWithObjects:@"Peru", @"Ireland", nil];
+    imageCategories = [[NSArray alloc] initWithObjects:@"Peru", @"Ireland", @"Hawaii", @"Aruba", @"Cozumel", @"Chicago", nil];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -48,14 +49,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [imageCategories count];
 }
@@ -123,6 +122,24 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSDate *object = _objects[indexPath.row];
+        self.detailViewController.detailItem = object;
+    }*/
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *detail = imageCategories[indexPath.row];
+
+        [[segue destinationViewController] setDetailItem:detail];
+    }
+}
+
 
 @end

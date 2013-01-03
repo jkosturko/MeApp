@@ -18,6 +18,7 @@
     NSArray *arrayOfDescription;
 }
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,7 +37,6 @@
     arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg", @"duck1.jpeg", @"duck2.jpeg", @"duck3.jpeg",@"peru1.jpg", nil];
     arrayOfDescription = [[NSArray alloc]initWithObjects:@"Duck 0", @"duck 1", @"duck 2", @"duck 3", @"Peru", nil];
     
-    NSLog(@"%@", @"Hey PIcture Controller");
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

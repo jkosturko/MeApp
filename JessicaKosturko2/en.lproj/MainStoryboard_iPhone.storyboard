@@ -169,7 +169,7 @@ A strong desire to learn</string>
                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Photos">
+                                        <fragment content="Travel">
                                             <attributes>
                                                 <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="15" name="Helvetica-Bold"/>
@@ -280,14 +280,14 @@ A strong desire to learn</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <navigationItem id="lYp-M2-N0U"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="-1064"/>
+            <point key="canvasLocation" x="-180" y="-1755"/>
         </scene>
         <!--Large Image View Controller-->
         <scene sceneID="uOw-4w-Rqv">
             <objects>
-                <viewController id="2Ks-uG-I99" customClass="LargeImage_ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Photo_LargeView" id="2Ks-uG-I99" customClass="LargeImage_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlH-7p-AmK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="peru1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VVJ-bN-Qv2">
@@ -310,27 +310,27 @@ A strong desire to learn</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRt-V9-7pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="dmy-gZ-cNx"/>
             </objects>
-            <point key="canvasLocation" x="643" y="-1115"/>
+            <point key="canvasLocation" x="1051" y="-1191"/>
         </scene>
         <!--Picture Categories Table View Controller - Picture Categories-->
         <scene sceneID="O8R-xJ-ruq">
             <objects>
-                <tableViewController id="h1H-qz-0Q5" customClass="PictureCategories_TableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Photo_TableView" id="h1H-qz-0Q5" customClass="PictureCategories_TableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="x9V-Y7-kOO">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" rowHeight="63" id="zxD-J9-wyG">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" rowHeight="63" id="zxD-J9-wyG">
                                 <rect key="frame" x="0.0" y="22" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="62"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="rmb-r6-y6j" kind="push" id="AEZ-hs-S1f"/>
+                                    <segue destination="iqX-FH-wyW" kind="push" identifier="showDetail" id="6oy-NX-pOb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -343,14 +343,59 @@ A strong desire to learn</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4J-bx-hqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="-1080"/>
+            <point key="canvasLocation" x="238" y="-1262"/>
+        </scene>
+        <!--Photo Table Detail View Controller-->
+        <scene sceneID="IHT-Qt-KyI">
+            <objects>
+                <viewController id="iqX-FH-wyW" customClass="PhotoTableDetail_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1d9-F7-LMt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="55" contentMode="left" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW1-Jk-bQK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="25m-GI-t6p"/>
+                                    <constraint firstAttribute="height" constant="41" id="zEh-EO-Nhn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-gM-1co">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="ocm-us-MU6"/>
+                                    <constraint firstAttribute="height" constant="52" id="s69-3Y-Rfp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WW1-Jk-bQK" firstAttribute="top" secondItem="1d9-F7-LMt" secondAttribute="top" constant="231" id="Dvh-l1-hUs"/>
+                            <constraint firstItem="PKH-gM-1co" firstAttribute="top" secondItem="1d9-F7-LMt" secondAttribute="top" constant="98" id="Sw7-cg-8Iy"/>
+                            <constraint firstAttribute="trailing" secondItem="PKH-gM-1co" secondAttribute="trailing" constant="32" id="rOh-IH-bNW"/>
+                            <constraint firstItem="WW1-Jk-bQK" firstAttribute="leading" secondItem="1d9-F7-LMt" secondAttribute="leading" constant="104" id="t5k-Zs-rwn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Boe-7S-EEm"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="WW1-Jk-bQK" id="diP-3a-zdG"/>
+                        <outlet property="detailLabel" destination="PKH-gM-1co" id="xPg-9q-eDo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTC-HQ-qPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="-1245"/>
         </scene>
         <!--Pictures View Controller-->
         <scene sceneID="uzv-J4-T8P">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="rmb-r6-y6j" customClass="Pictures_ViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Photo_CollectionView" autoresizesArchivedViewToFullSize="NO" id="rmb-r6-y6j" customClass="Pictures_ViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="EZ0-z7-MyQ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.88235300779342651" green="0.0" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NHs-oc-EcH">
@@ -360,7 +405,7 @@ A strong desire to learn</string>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <imageView key="backgroundView" hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="peru1.jpg" id="nMY-MC-8wN">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="320" id="Upc-Vf-A34"/>
@@ -386,7 +431,7 @@ A strong desire to learn</string>
                                             </state>
                                             <connections>
                                                 <action selector="tapCell:" destination="rmb-r6-y6j" eventType="touchUpInside" id="17c-Id-8da"/>
-                                                <segue destination="2Ks-uG-I99" kind="push" id="IHx-00-hBp"/>
+                                                <segue destination="2Ks-uG-I99" kind="push" id="cUw-4o-Tj8"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -418,7 +463,7 @@ A strong desire to learn</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zft-iJ-o1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="-1171"/>
+            <point key="canvasLocation" x="660" y="-1175"/>
         </scene>
     </scenes>
     <resources>
@@ -427,53 +472,6 @@ A strong desire to learn</string>
         <image name="iphone1.png" width="320" height="480"/>
         <image name="peru1.jpg" width="500" height="375"/>
     </resources>
-    <classes>
-        <class className="CollectionViewCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="LargeImage_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LargeImage_ViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="PictureCategories_TableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureCategories_TableViewController.h"/>
-        </class>
-        <class className="Pictures_ViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Pictures_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="tapCell:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="largeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="myCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="Quotes_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Quotes_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="swipeQuoteGesture:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="outlet" name="quoteLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

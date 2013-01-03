@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DetailViewController;
 
 @interface PictureCategories_TableViewController : UITableViewController
-
+@property (weak, nonatomic) DetailViewController *detailViewController;
 @end

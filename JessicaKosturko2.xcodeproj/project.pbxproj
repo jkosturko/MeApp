@@ -15,6 +15,7 @@
 		A324BB8516960AA3004D5B43 /* peru1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB8416960AA3004D5B43 /* peru1.jpg */; };
 		A324BB8816961A96004D5B43 /* LargeImage_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */; };
 		A324BB8B1696212A004D5B43 /* PictureCategories_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */; };
+		A324BBCF16962E05004D5B43 /* PhotoTableDetail_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BBCE16962E05004D5B43 /* PhotoTableDetail_ViewController.m */; };
 		A34FA61D167928030043E6D7 /* iphone1.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61C167928030043E6D7 /* iphone1.png */; };
 		A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61E167929FD0043E6D7 /* graybackground.png */; };
 		A34FA62116792B940043E6D7 /* bluebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA62016792B940043E6D7 /* bluebackground.png */; };
@@ -64,6 +65,8 @@
 		A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeImage_ViewController.m; sourceTree = "<group>"; };
 		A324BB891696212A004D5B43 /* PictureCategories_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCategories_TableViewController.h; sourceTree = "<group>"; };
 		A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCategories_TableViewController.m; sourceTree = "<group>"; };
+		A324BBCD16962E05004D5B43 /* PhotoTableDetail_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableDetail_ViewController.h; sourceTree = "<group>"; };
+		A324BBCE16962E05004D5B43 /* PhotoTableDetail_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableDetail_ViewController.m; sourceTree = "<group>"; };
 		A34FA61C167928030043E6D7 /* iphone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone1.png; sourceTree = "<group>"; };
 		A34FA61E167929FD0043E6D7 /* graybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graybackground.png; sourceTree = "<group>"; };
 		A34FA62016792B940043E6D7 /* bluebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebackground.png; sourceTree = "<group>"; };
@@ -85,8 +88,8 @@
 		A37375951676A4FF006557C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A37375981676A4FF006557C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A373759B1676A500006557C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A373759D1676A500006557C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A373759E1676A500006557C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A373759D1676A500006557C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = JessicaKosturko2/ViewController.h; sourceTree = "<group>"; };
+		A373759E1676A500006557C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = JessicaKosturko2/ViewController.m; sourceTree = "<group>"; };
 		A37375A51676A500006557C0 /* JessicaKosturko2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JessicaKosturko2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37375A61676A500006557C0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A37375AE1676A500006557C0 /* JessicaKosturko2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JessicaKosturko2Tests-Info.plist"; sourceTree = "<group>"; };
@@ -128,14 +131,9 @@
 		A324BB8C169621EB004D5B43 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				A324BB891696212A004D5B43 /* PictureCategories_TableViewController.h */,
-				A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */,
-				A324BB77169603DC004D5B43 /* Pictures_ViewController.h */,
-				A324BB78169603DC004D5B43 /* Pictures_ViewController.m */,
-				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
-				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
-				A324BB8616961A96004D5B43 /* LargeImage_ViewController.h */,
-				A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */,
+				A324BBC716962682004D5B43 /* TableView */,
+				A324BBC8169626C7004D5B43 /* CollectionView - Image Grid */,
+				A324BBC9169626F2004D5B43 /* ImageView - Full Image Size */,
 			);
 			name = Photos;
 			sourceTree = "<group>";
@@ -147,6 +145,57 @@
 				A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */,
 			);
 			name = Quotes;
+			sourceTree = "<group>";
+		};
+		A324BBC716962682004D5B43 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A324BB891696212A004D5B43 /* PictureCategories_TableViewController.h */,
+				A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		A324BBC8169626C7004D5B43 /* CollectionView - Image Grid */ = {
+			isa = PBXGroup;
+			children = (
+				A324BB77169603DC004D5B43 /* Pictures_ViewController.h */,
+				A324BB78169603DC004D5B43 /* Pictures_ViewController.m */,
+				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
+				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
+			);
+			name = "CollectionView - Image Grid";
+			sourceTree = "<group>";
+		};
+		A324BBC9169626F2004D5B43 /* ImageView - Full Image Size */ = {
+			isa = PBXGroup;
+			children = (
+				A324BB8616961A96004D5B43 /* LargeImage_ViewController.h */,
+				A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */,
+			);
+			name = "ImageView - Full Image Size";
+			sourceTree = "<group>";
+		};
+		A324BBCB16962A6C004D5B43 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				A373759D1676A500006557C0 /* ViewController.h */,
+				A373759E1676A500006557C0 /* ViewController.m */,
+			);
+			name = "Main View";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A324BBCC16962A99004D5B43 /* Career */ = {
+			isa = PBXGroup;
+			children = (
+				A34FA675167945450043E6D7 /* pageViewFirstPage.h */,
+				A34FA676167945450043E6D7 /* pageViewFirstPage.m */,
+				A34FA677167945450043E6D7 /* pageViewFirstPage.xib */,
+				A37375C01676A8D3006557C0 /* PageViewController.h */,
+				A37375C11676A8D3006557C0 /* PageViewController.m */,
+			);
+			name = Career;
 			sourceTree = "<group>";
 		};
 		A34FA6161679262E0043E6D7 /* Images */ = {
@@ -200,17 +249,14 @@
 			children = (
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
+				A324BBCD16962E05004D5B43 /* PhotoTableDetail_ViewController.h */,
+				A324BBCE16962E05004D5B43 /* PhotoTableDetail_ViewController.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
 				A373759A1676A4FF006557C0 /* MainStoryboard_iPad.storyboard */,
+				A324BBCB16962A6C004D5B43 /* Main View */,
+				A324BBCC16962A99004D5B43 /* Career */,
 				A324BB8E16962228004D5B43 /* Quotes */,
 				A324BB8C169621EB004D5B43 /* Photos */,
-				A34FA675167945450043E6D7 /* pageViewFirstPage.h */,
-				A34FA676167945450043E6D7 /* pageViewFirstPage.m */,
-				A34FA677167945450043E6D7 /* pageViewFirstPage.xib */,
-				A37375C01676A8D3006557C0 /* PageViewController.h */,
-				A37375C11676A8D3006557C0 /* PageViewController.m */,
-				A373759D1676A500006557C0 /* ViewController.h */,
-				A373759E1676A500006557C0 /* ViewController.m */,
 				A37375861676A4FF006557C0 /* Supporting Files */,
 			);
 			path = JessicaKosturko2;
@@ -379,6 +425,7 @@
 				A324BB79169603DC004D5B43 /* Pictures_ViewController.m in Sources */,
 				A324BB8816961A96004D5B43 /* LargeImage_ViewController.m in Sources */,
 				A324BB8B1696212A004D5B43 /* PictureCategories_TableViewController.m in Sources */,
+				A324BBCF16962E05004D5B43 /* PhotoTableDetail_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
