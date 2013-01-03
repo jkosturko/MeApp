@@ -1,24 +1,24 @@
 //
-//  CollectionViewController.m
+//  LargeImage_ViewController.m
 //  JessicaKosturko2
 //
-//  Created by Kosturko, Jessica on 12/10/12.
-//  Copyright (c) 2012 Kosturko, Jessica. All rights reserved.
+//  Created by Kosturko, Jessica on 1/3/13.
+//  Copyright (c) 2013 Kosturko, Jessica. All rights reserved.
 //
 
-#import "CollectionViewController.h"
+#import "LargeImage_ViewController.h"
 
-@interface CollectionViewController ()
+@interface LargeImage_ViewController ()
 
 @end
 
-@implementation CollectionViewController
+@implementation LargeImage_ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization ///Test
+        // Custom initialization
     }
     return self;
 }

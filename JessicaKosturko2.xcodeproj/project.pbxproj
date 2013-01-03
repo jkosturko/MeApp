@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A324BB79169603DC004D5B43 /* Pictures_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB78169603DC004D5B43 /* Pictures_ViewController.m */; };
+		A324BB7D16960536004D5B43 /* duck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7C16960536004D5B43 /* duck.jpeg */; };
+		A324BB811696067D004D5B43 /* duck3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7E1696067D004D5B43 /* duck3.jpeg */; };
+		A324BB821696067D004D5B43 /* duck2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7F1696067D004D5B43 /* duck2.jpeg */; };
+		A324BB831696067D004D5B43 /* duck1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB801696067D004D5B43 /* duck1.jpeg */; };
+		A324BB8516960AA3004D5B43 /* peru1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB8416960AA3004D5B43 /* peru1.jpg */; };
+		A324BB8816961A96004D5B43 /* LargeImage_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */; };
+		A324BB8B1696212A004D5B43 /* PictureCategories_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */; };
 		A34FA61D167928030043E6D7 /* iphone1.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61C167928030043E6D7 /* iphone1.png */; };
 		A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA61E167929FD0043E6D7 /* graybackground.png */; };
 		A34FA62116792B940043E6D7 /* bluebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A34FA62016792B940043E6D7 /* bluebackground.png */; };
@@ -29,7 +37,6 @@
 		A37375A91676A500006557C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37375811676A4FF006557C0 /* Foundation.framework */; };
 		A37375B11676A500006557C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A37375AF1676A500006557C0 /* InfoPlist.strings */; };
 		A37375B41676A500006557C0 /* JessicaKosturko2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375B31676A500006557C0 /* JessicaKosturko2Tests.m */; };
-		A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375BE1676A606006557C0 /* CollectionViewController.m */; };
 		A37375C21676A8D3006557C0 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C11676A8D3006557C0 /* PageViewController.m */; };
 		A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C41676AC93006557C0 /* CollectionViewCell.m */; };
 		A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */; };
@@ -46,6 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A324BB77169603DC004D5B43 /* Pictures_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pictures_ViewController.h; sourceTree = "<group>"; };
+		A324BB78169603DC004D5B43 /* Pictures_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pictures_ViewController.m; sourceTree = "<group>"; };
+		A324BB7C16960536004D5B43 /* duck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck.jpeg; sourceTree = "<group>"; };
+		A324BB7E1696067D004D5B43 /* duck3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck3.jpeg; sourceTree = "<group>"; };
+		A324BB7F1696067D004D5B43 /* duck2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck2.jpeg; sourceTree = "<group>"; };
+		A324BB801696067D004D5B43 /* duck1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck1.jpeg; sourceTree = "<group>"; };
+		A324BB8416960AA3004D5B43 /* peru1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peru1.jpg; sourceTree = "<group>"; };
+		A324BB8616961A96004D5B43 /* LargeImage_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeImage_ViewController.h; sourceTree = "<group>"; };
+		A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeImage_ViewController.m; sourceTree = "<group>"; };
+		A324BB891696212A004D5B43 /* PictureCategories_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCategories_TableViewController.h; sourceTree = "<group>"; };
+		A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCategories_TableViewController.m; sourceTree = "<group>"; };
 		A34FA61C167928030043E6D7 /* iphone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone1.png; sourceTree = "<group>"; };
 		A34FA61E167929FD0043E6D7 /* graybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graybackground.png; sourceTree = "<group>"; };
 		A34FA62016792B940043E6D7 /* bluebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebackground.png; sourceTree = "<group>"; };
@@ -75,8 +93,6 @@
 		A37375B01676A500006557C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A37375B21676A500006557C0 /* JessicaKosturko2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JessicaKosturko2Tests.h; sourceTree = "<group>"; };
 		A37375B31676A500006557C0 /* JessicaKosturko2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JessicaKosturko2Tests.m; sourceTree = "<group>"; };
-		A37375BD1676A606006557C0 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		A37375BE1676A606006557C0 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		A37375C01676A8D3006557C0 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		A37375C11676A8D3006557C0 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		A37375C31676AC93006557C0 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -109,9 +125,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A324BB8C169621EB004D5B43 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				A324BB891696212A004D5B43 /* PictureCategories_TableViewController.h */,
+				A324BB8A1696212A004D5B43 /* PictureCategories_TableViewController.m */,
+				A324BB77169603DC004D5B43 /* Pictures_ViewController.h */,
+				A324BB78169603DC004D5B43 /* Pictures_ViewController.m */,
+				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
+				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
+				A324BB8616961A96004D5B43 /* LargeImage_ViewController.h */,
+				A324BB8716961A96004D5B43 /* LargeImage_ViewController.m */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		A324BB8E16962228004D5B43 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */,
+				A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */,
+			);
+			name = Quotes;
+			sourceTree = "<group>";
+		};
 		A34FA6161679262E0043E6D7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A324BB8416960AA3004D5B43 /* peru1.jpg */,
+				A324BB7E1696067D004D5B43 /* duck3.jpeg */,
+				A324BB7F1696067D004D5B43 /* duck2.jpeg */,
+				A324BB801696067D004D5B43 /* duck1.jpeg */,
+				A324BB7C16960536004D5B43 /* duck.jpeg */,
 				A34FA62016792B940043E6D7 /* bluebackground.png */,
 				A34FA61E167929FD0043E6D7 /* graybackground.png */,
 				A34FA61C167928030043E6D7 /* iphone1.png */,
@@ -156,18 +201,14 @@
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
+				A373759A1676A4FF006557C0 /* MainStoryboard_iPad.storyboard */,
+				A324BB8E16962228004D5B43 /* Quotes */,
+				A324BB8C169621EB004D5B43 /* Photos */,
 				A34FA675167945450043E6D7 /* pageViewFirstPage.h */,
 				A34FA676167945450043E6D7 /* pageViewFirstPage.m */,
 				A34FA677167945450043E6D7 /* pageViewFirstPage.xib */,
-				A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */,
-				A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */,
 				A37375C01676A8D3006557C0 /* PageViewController.h */,
 				A37375C11676A8D3006557C0 /* PageViewController.m */,
-				A37375BD1676A606006557C0 /* CollectionViewController.h */,
-				A37375BE1676A606006557C0 /* CollectionViewController.m */,
-				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
-				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
-				A373759A1676A4FF006557C0 /* MainStoryboard_iPad.storyboard */,
 				A373759D1676A500006557C0 /* ViewController.h */,
 				A373759E1676A500006557C0 /* ViewController.m */,
 				A37375861676A4FF006557C0 /* Supporting Files */,
@@ -289,6 +330,11 @@
 				A34FA61F167929FD0043E6D7 /* graybackground.png in Resources */,
 				A34FA62116792B940043E6D7 /* bluebackground.png in Resources */,
 				A34FA679167945450043E6D7 /* pageViewFirstPage.xib in Resources */,
+				A324BB7D16960536004D5B43 /* duck.jpeg in Resources */,
+				A324BB811696067D004D5B43 /* duck3.jpeg in Resources */,
+				A324BB821696067D004D5B43 /* duck2.jpeg in Resources */,
+				A324BB831696067D004D5B43 /* duck1.jpeg in Resources */,
+				A324BB8516960AA3004D5B43 /* peru1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,11 +372,13 @@
 				A373758C1676A4FF006557C0 /* main.m in Sources */,
 				A37375901676A4FF006557C0 /* AppDelegate.m in Sources */,
 				A373759F1676A500006557C0 /* ViewController.m in Sources */,
-				A37375BF1676A606006557C0 /* CollectionViewController.m in Sources */,
 				A37375C21676A8D3006557C0 /* PageViewController.m in Sources */,
 				A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */,
 				A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */,
 				A34FA678167945450043E6D7 /* pageViewFirstPage.m in Sources */,
+				A324BB79169603DC004D5B43 /* Pictures_ViewController.m in Sources */,
+				A324BB8816961A96004D5B43 /* LargeImage_ViewController.m in Sources */,
+				A324BB8B1696212A004D5B43 /* PictureCategories_TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
