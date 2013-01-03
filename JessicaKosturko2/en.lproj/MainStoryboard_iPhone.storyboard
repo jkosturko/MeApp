@@ -353,6 +353,31 @@ A strong desire to learn</string>
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-Zs-9z8">
+                                <color key="backgroundColor" red="1" green="0.54054829469999999" blue="0.58779658580000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="509" id="19z-j3-12d"/>
+                                    <constraint firstAttribute="width" constant="351" id="nug-T6-4tm"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YS4-Zy-4cj">
+                                    <size key="itemSize" width="100" height="82"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GT3-Po-v6P">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.93333339691162109" green="0.050980396568775177" blue="0.26274511218070984" alpha="1" colorSpace="deviceRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="55" contentMode="left" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW1-Jk-bQK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="25m-GI-t6p"/>
@@ -366,6 +391,8 @@ A strong desire to learn</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WW1-Jk-bQK" firstAttribute="top" secondItem="1d9-F7-LMt" secondAttribute="top" constant="231" id="Dvh-l1-hUs"/>
+                            <constraint firstItem="eLu-Zs-9z8" firstAttribute="leading" secondItem="1d9-F7-LMt" secondAttribute="leading" constant="-10" id="HfU-nc-hPc"/>
+                            <constraint firstItem="eLu-Zs-9z8" firstAttribute="bottom" secondItem="1d9-F7-LMt" secondAttribute="bottom" type="default" id="rao-XC-mOE"/>
                             <constraint firstItem="WW1-Jk-bQK" firstAttribute="leading" secondItem="1d9-F7-LMt" secondAttribute="leading" constant="104" id="t5k-Zs-rwn"/>
                         </constraints>
                     </view>
