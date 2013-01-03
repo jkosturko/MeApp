@@ -33,11 +33,7 @@
 {
     // Update the user interface for the detail item.
     
-    NSLog(@"Descripotino %@", _detailLabel.text);
-        NSLog(@"Descripotino %@", _detailDescriptionLabel.text);
-     NSLog(@"detail %@", self.detailItem);
     _detailDescriptionLabel.textColor = [UIColor redColor];
-    _detailLabel.textColor = [UIColor blueColor];
     
     
     
@@ -61,6 +57,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
