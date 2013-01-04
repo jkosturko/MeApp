@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A324BB79169603DC004D5B43 /* Pictures_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A324BB78169603DC004D5B43 /* Pictures_ViewController.m */; };
 		A324BB7D16960536004D5B43 /* duck.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7C16960536004D5B43 /* duck.jpeg */; };
 		A324BB811696067D004D5B43 /* duck3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7E1696067D004D5B43 /* duck3.jpeg */; };
 		A324BB821696067D004D5B43 /* duck2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A324BB7F1696067D004D5B43 /* duck2.jpeg */; };
@@ -55,8 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A324BB77169603DC004D5B43 /* Pictures_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pictures_ViewController.h; sourceTree = "<group>"; };
-		A324BB78169603DC004D5B43 /* Pictures_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pictures_ViewController.m; sourceTree = "<group>"; };
 		A324BB7C16960536004D5B43 /* duck.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck.jpeg; sourceTree = "<group>"; };
 		A324BB7E1696067D004D5B43 /* duck3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck3.jpeg; sourceTree = "<group>"; };
 		A324BB7F1696067D004D5B43 /* duck2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duck2.jpeg; sourceTree = "<group>"; };
@@ -161,8 +158,8 @@
 		A324BBC8169626C7004D5B43 /* CollectionView - Image Grid */ = {
 			isa = PBXGroup;
 			children = (
-				A324BB77169603DC004D5B43 /* Pictures_ViewController.h */,
-				A324BB78169603DC004D5B43 /* Pictures_ViewController.m */,
+				A324BBCD16962E05004D5B43 /* PhotoTableDetail_ViewController.h */,
+				A324BBCE16962E05004D5B43 /* PhotoTableDetail_ViewController.m */,
 				A37375C31676AC93006557C0 /* CollectionViewCell.h */,
 				A37375C41676AC93006557C0 /* CollectionViewCell.m */,
 			);
@@ -250,10 +247,9 @@
 		A37375851676A4FF006557C0 /* JessicaKosturko2 */ = {
 			isa = PBXGroup;
 			children = (
+				A3F5263F16974D760091808C /* Hobbies */,
 				A373758E1676A4FF006557C0 /* AppDelegate.h */,
 				A373758F1676A4FF006557C0 /* AppDelegate.m */,
-				A324BBCD16962E05004D5B43 /* PhotoTableDetail_ViewController.h */,
-				A324BBCE16962E05004D5B43 /* PhotoTableDetail_ViewController.m */,
 				A37375971676A4FF006557C0 /* MainStoryboard_iPhone.storyboard */,
 				A373759A1676A4FF006557C0 /* MainStoryboard_iPad.storyboard */,
 				A324BBCB16962A6C004D5B43 /* Main View */,
@@ -296,6 +292,13 @@
 				A37375AF1676A500006557C0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3F5263F16974D760091808C /* Hobbies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Hobbies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +429,6 @@
 				A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */,
 				A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */,
 				A34FA678167945450043E6D7 /* pageViewFirstPage.m in Sources */,
-				A324BB79169603DC004D5B43 /* Pictures_ViewController.m in Sources */,
 				A324BB8816961A96004D5B43 /* LargeImage_ViewController.m in Sources */,
 				A324BB8B1696212A004D5B43 /* PictureCategories_TableViewController.m in Sources */,
 				A324BBCF16962E05004D5B43 /* PhotoTableDetail_ViewController.m in Sources */,

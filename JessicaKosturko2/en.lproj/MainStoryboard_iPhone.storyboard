@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Quotes View Controller-->
+        <!--Quotes View Controller - Quotes-->
         <scene sceneID="XQ3-Ev-FWz">
             <objects>
                 <viewController id="5UD-X4-4qX" customClass="Quotes_ViewController" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                             <outletCollection property="gestureRecognizers" destination="fho-8j-f7s" appends="YES" id="8mz-bU-Jcs"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="dAI-PY-AkV"/>
+                    <navigationItem key="navigationItem" title="Quotes" id="dAI-PY-AkV"/>
                     <connections>
                         <outlet property="quoteLabel" destination="fy8-Yj-o1N" id="Eeu-nx-qA4"/>
                     </connections>
@@ -130,7 +130,7 @@ A strong desire to learn</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uV-Hv-Fb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-493" y="-1071"/>
+            <point key="canvasLocation" x="-453" y="-900"/>
         </scene>
         <!--View Controller - Jessica Kosturko-->
         <scene sceneID="5">
@@ -306,11 +306,14 @@ A strong desire to learn</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4PE-fm-4eR"/>
+                    <connections>
+                        <outlet property="largeImageView" destination="VVJ-bN-Qv2" id="umJ-qG-Mwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRt-V9-7pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="dmy-gZ-cNx"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="-1191"/>
+            <point key="canvasLocation" x="995" y="-1386"/>
         </scene>
         <!--Picture Categories Table View Controller - Photos-->
         <scene sceneID="O8R-xJ-ruq">
@@ -343,7 +346,7 @@ A strong desire to learn</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4J-bx-hqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="-1261"/>
+            <point key="canvasLocation" x="513" y="-1929"/>
         </scene>
         <!--Photo Table Detail View Controller - Test-->
         <scene sceneID="IHT-Qt-KyI">
@@ -387,7 +390,7 @@ A strong desire to learn</string>
                                                     </state>
                                                     <connections>
                                                         <action selector="tapCell:" destination="iqX-FH-wyW" eventType="touchUpInside" id="c4F-n2-BSy"/>
-                                                        <segue destination="2Ks-uG-I99" kind="push" id="b6H-Oy-Wyg"/>
+                                                        <segue destination="2Ks-uG-I99" kind="push" identifier="ToLargeImage" id="b6H-Oy-Wyg"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -431,74 +434,7 @@ A strong desire to learn</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTC-HQ-qPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="-1148"/>
-        </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="uzv-J4-T8P">
-            <objects>
-                <collectionViewController storyboardIdentifier="Photo_CollectionView" autoresizesArchivedViewToFullSize="NO" id="rmb-r6-y6j" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="EZ0-z7-MyQ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.0" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NHs-oc-EcH">
-                            <size key="itemSize" width="119" height="120"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <imageView key="backgroundView" hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="peru1.jpg" id="nMY-MC-8wN">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="320" id="Upc-Vf-A34"/>
-                                <constraint firstAttribute="height" constant="504" id="bYv-T4-adn"/>
-                            </constraints>
-                        </imageView>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="rLT-oc-ZZw">
-                                <rect key="frame" x="0.0" y="0.0" width="119" height="120"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="119" height="120"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-Un-lbt">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                            <state key="normal">
-                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <state key="highlighted">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="T6B-Un-lbt" firstAttribute="leading" secondItem="rLT-oc-ZZw" secondAttribute="leading" type="default" id="2jg-nm-PMf"/>
-                                    <constraint firstItem="T6B-Un-lbt" firstAttribute="centerY" secondItem="rLT-oc-ZZw" secondAttribute="centerY" type="default" id="9n0-JY-KNf"/>
-                                    <constraint firstItem="T6B-Un-lbt" firstAttribute="top" secondItem="rLT-oc-ZZw" secondAttribute="top" type="default" id="W8K-z9-HT2"/>
-                                    <constraint firstItem="T6B-Un-lbt" firstAttribute="trailing" secondItem="rLT-oc-ZZw" secondAttribute="trailing" type="default" id="WQW-sB-6IF"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="myButton" destination="T6B-Un-lbt" id="UNm-P3-WEf"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="rmb-r6-y6j" id="BGe-1O-dqa"/>
-                            <outlet property="delegate" destination="rmb-r6-y6j" id="IXd-Rr-I3q"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="AJE-HD-14t"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zft-iJ-o1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="854" y="-300"/>
+            <point key="canvasLocation" x="523" y="-1271"/>
         </scene>
     </scenes>
     <resources>
@@ -516,6 +452,10 @@ A strong desire to learn</string>
         </class>
         <class className="LargeImage_ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LargeImage_ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="largeImageView" candidateClass="UIImageView"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
@@ -543,9 +483,6 @@ A strong desire to learn</string>
         </class>
         <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>

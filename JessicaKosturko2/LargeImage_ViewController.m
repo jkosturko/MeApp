@@ -9,6 +9,8 @@
 #import "LargeImage_ViewController.h"
 
 @interface LargeImage_ViewController ()
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+- (void)configureView;
 
 @end
 
@@ -23,10 +25,36 @@
     return self;
 }
 
+- (void)setDetailItem:(id)newDetailItem
+{
+    if (_detailItem != newDetailItem) {
+        _detailItem = newDetailItem;
+        
+        // Update the view.
+        [self configureView];
+    }
+    
+    if (self.masterPopoverController != nil) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
+}
+
+- (void)configureView
+{
+    // Update the user interface for the detail item.
+    
+    if (self.detailItem) {
+        //self.detailDescriptionLabel.text = [self.detailItem description];
+        _largeImageView.image = _detailItem;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning

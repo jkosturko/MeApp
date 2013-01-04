@@ -17,6 +17,7 @@
 @implementation PhotoTableDetail_ViewController{
     NSArray *arrayOfImages;
     NSArray *arrayOfDescription;
+    NSArray *newImageArray;
 }
 
 - (void)setDetailItem:(id)newDetailItem
@@ -47,10 +48,7 @@
         self.navigationItem.title = self.detailItem;
     }
     
-//    if (self.detailItem isEqualToString:@"Hawaii") {
-//        _myGridImage
-//    }
-    
+    [self setImages];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -68,11 +66,7 @@
     [[self myCollectionView]setDelegate:self];
     [[self myCollectionView]setDataSource:self];
     
-    
-    [self setImages];
-    
 
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
    
@@ -92,32 +86,31 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    NSLog(@"%u", [arrayOfImages count]);
-    return [arrayOfImages count];
+    return [newImageArray count];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    [[cell myButton]setImage:[UIImage imageNamed:[arrayOfImages objectAtIndex:indexPath.item]] forState:UIControlStateNormal];
+    NSString *imageLink = [[[newImageArray objectAtIndex:indexPath.item] objectForKey:@"media"]objectForKey:@"m"];
     
-    NSLog(@"%@", [UIImage imageNamed:[arrayOfImages objectAtIndex:indexPath.item]]);
+    [[cell myButton]setImage:[self urlToImage:imageLink] forState:UIControlStateNormal];
     
     return cell;
     
 }
 - (IBAction)tapCell:(UIButton *)sender {
     
-    NSLog(@"%@", [sender imageForState:UIControlStateNormal]);
-    
-    //    _largeImage.image = [sender imageForState:UIControlStateNormal];
-    //    _largeImage.hidden = NO;
-    //
 
 }
 
 -(void)setImages{
+    
+    NSDictionary *jsonDictionary = [self urlToJson:self.detailItem];
+    newImageArray = [self imagesIntoArray:jsonDictionary];
+    
+
     
     if ([self.detailItem isEqualToString:@"Peru"])
     {
@@ -127,13 +120,53 @@
     {
         arrayOfImages = [[NSArray alloc] initWithObjects:@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg", nil];
         
-        NSLog(@"%@", arrayOfImages);
-        
     }
     else
     {
         arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg",@"duck.jpeg",@"duck.jpeg",@"duck.jpeg", nil];
 
+ 
+    }
+}
+
+- (NSDictionary *)urlToJson:(NSString *)category {
+    NSString *baseUrl = @"http://api.flickr.com/services/feeds/photos_public.gne?id=38381313@N06&format=json&nojsoncallback=1&tags=";
+    NSString *fullUrl = [NSString stringWithFormat:@"%@%@", baseUrl, self.detailItem];
+    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:fullUrl]];
+    
+    NSDictionary *jsonImages = nil;
+    if (jsonData) {
+        jsonImages = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+    }
+    
+    return jsonImages;
+}
+
+-(NSArray *)imagesIntoArray:(NSDictionary *)jsonDictionary {
+    NSArray *imageArray = [[NSArray alloc] initWithArray:[jsonDictionary objectForKey:@"items"]];
+    
+    return imageArray;
+    
+}
+
+-(UIImage *)urlToImage:(NSString *)imageURL {
+    UIImage *pImage=[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]]];
+    
+  //  [[cell myButton]setImage:[UIImage imageNamed:pImage forState:UIControlStateNormal];
+   // [imageView setImage:pImage];
+     
+     return pImage;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
+{
+    if ([[segue identifier] isEqualToString:@"ToLargeImage"]) {
+//        NSLog(@"%@", sender.imageView.image);
+
+
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        NSDate *object = _objects[indexPath.row];
+        [[segue destinationViewController] setDetailItem:sender.imageView.image];
     }
 }
 @end
