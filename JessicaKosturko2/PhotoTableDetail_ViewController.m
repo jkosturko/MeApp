@@ -40,15 +40,13 @@
     
     _detailDescriptionLabel.textColor = [UIColor redColor];
     
-    
-    
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
         self.title = self.detailItem;
         self.navigationItem.title = self.detailItem;
     }
     
-    [self setImages];
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -62,6 +60,7 @@
 
 - (void)viewDidLoad
 {
+    [self setImages];
     
     [[self myCollectionView]setDelegate:self];
     [[self myCollectionView]setDataSource:self];
@@ -100,33 +99,11 @@
     return cell;
     
 }
-- (IBAction)tapCell:(UIButton *)sender {
-    
-
-}
 
 -(void)setImages{
     
     NSDictionary *jsonDictionary = [self urlToJson:self.detailItem];
     newImageArray = [self imagesIntoArray:jsonDictionary];
-    
-
-    
-    if ([self.detailItem isEqualToString:@"Peru"])
-    {
-        arrayOfImages = [[NSArray alloc] initWithObjects:@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg", nil];
-    }
-    else if ([self.detailItem isEqualToString:@"Hawaii"])
-    {
-        arrayOfImages = [[NSArray alloc] initWithObjects:@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg", nil];
-        
-    }
-    else
-    {
-        arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg",@"duck.jpeg",@"duck.jpeg",@"duck.jpeg", nil];
-
- 
-    }
 }
 
 - (NSDictionary *)urlToJson:(NSString *)category {
@@ -151,21 +128,15 @@
 
 -(UIImage *)urlToImage:(NSString *)imageURL {
     UIImage *pImage=[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imageURL]]];
-    
-  //  [[cell myButton]setImage:[UIImage imageNamed:pImage forState:UIControlStateNormal];
-   // [imageView setImage:pImage];
      
      return pImage;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
+    NSLog(@"%@", sender.imageView.image);
     if ([[segue identifier] isEqualToString:@"ToLargeImage"]) {
-//        NSLog(@"%@", sender.imageView.image);
-
-
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = _objects[indexPath.row];
+            NSLog(@"%@", @"ToLargeImage");
         [[segue destinationViewController] setDetailItem:sender.imageView.image];
     }
 }

@@ -389,8 +389,7 @@ A strong desire to learn</string>
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="tapCell:" destination="iqX-FH-wyW" eventType="touchUpInside" id="c4F-n2-BSy"/>
-                                                        <segue destination="2Ks-uG-I99" kind="push" identifier="ToLargeImage" id="b6H-Oy-Wyg"/>
+                                                        <segue destination="2Ks-uG-I99" kind="push" identifier="ToLargeImage" id="kcP-ob-zkH"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -408,27 +407,15 @@ A strong desire to learn</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="55" contentMode="left" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW1-Jk-bQK">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="25m-GI-t6p"/>
-                                    <constraint firstAttribute="height" constant="41" id="zEh-EO-Nhn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WW1-Jk-bQK" firstAttribute="top" secondItem="1d9-F7-LMt" secondAttribute="top" constant="231" id="Dvh-l1-hUs"/>
                             <constraint firstItem="eLu-Zs-9z8" firstAttribute="leading" secondItem="1d9-F7-LMt" secondAttribute="leading" constant="-10" id="HfU-nc-hPc"/>
                             <constraint firstItem="eLu-Zs-9z8" firstAttribute="bottom" secondItem="1d9-F7-LMt" secondAttribute="bottom" type="default" id="rao-XC-mOE"/>
-                            <constraint firstItem="WW1-Jk-bQK" firstAttribute="leading" secondItem="1d9-F7-LMt" secondAttribute="leading" constant="104" id="t5k-Zs-rwn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Test" id="Boe-7S-EEm"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="WW1-Jk-bQK" id="diP-3a-zdG"/>
                         <outlet property="myCollectionView" destination="eLu-Zs-9z8" id="XPP-7h-Wbg"/>
                     </connections>
                 </viewController>
@@ -463,7 +450,6 @@ A strong desire to learn</string>
         <class className="PhotoTableDetail_ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoTableDetail_ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="tapCell:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myCollectionView" candidateClass="UICollectionView"/>
             </relationships>
