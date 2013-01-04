@@ -40,8 +40,11 @@
     _detailDescriptionLabel.textColor = [UIColor redColor];
     
     
+    
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+        self.title = self.detailItem;
+        self.navigationItem.title = self.detailItem;
     }
     
 //    if (self.detailItem isEqualToString:@"Hawaii") {
@@ -66,8 +69,9 @@
     [[self myCollectionView]setDataSource:self];
     
     
-    arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg", @"duck1.jpeg", @"duck2.jpeg", @"duck3.jpeg",@"peru1.jpg", nil];
-    arrayOfDescription = [[NSArray alloc]initWithObjects:@"Duck 0", @"duck 1", @"duck 2", @"duck 3", @"Peru", nil];
+    [self setImages];
+    
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -88,15 +92,17 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return [arrayOfDescription count];
+    NSLog(@"%u", [arrayOfImages count]);
+    return [arrayOfImages count];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    NSLog(@"%@, %@", CellIdentifier, indexPath );
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
     
     [[cell myButton]setImage:[UIImage imageNamed:[arrayOfImages objectAtIndex:indexPath.item]] forState:UIControlStateNormal];
+    
+    NSLog(@"%@", [UIImage imageNamed:[arrayOfImages objectAtIndex:indexPath.item]]);
     
     return cell;
     
@@ -109,5 +115,25 @@
     //    _largeImage.hidden = NO;
     //
 
+}
+
+-(void)setImages{
+    
+    if ([self.detailItem isEqualToString:@"Peru"])
+    {
+        arrayOfImages = [[NSArray alloc] initWithObjects:@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg",@"peru1.jpg", nil];
+    }
+    else if ([self.detailItem isEqualToString:@"Hawaii"])
+    {
+        arrayOfImages = [[NSArray alloc] initWithObjects:@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg",@"Hawaii1.jpg", nil];
+        
+        NSLog(@"%@", arrayOfImages);
+        
+    }
+    else
+    {
+        arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg",@"duck.jpeg",@"duck.jpeg",@"duck.jpeg", nil];
+
+    }
 }
 @end

@@ -41,6 +41,7 @@
 		A37375C21676A8D3006557C0 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C11676A8D3006557C0 /* PageViewController.m */; };
 		A37375C51676AC93006557C0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A37375C41676AC93006557C0 /* CollectionViewCell.m */; };
 		A3A6D2F116779B4D00DDE5E7 /* Quotes_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */; };
+		A3F5263916973FB30091808C /* Hawaii1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3F5263816973FB30091808C /* Hawaii1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		A37375C41676AC93006557C0 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		A3A6D2EF16779B4D00DDE5E7 /* Quotes_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quotes_ViewController.h; sourceTree = "<group>"; };
 		A3A6D2F016779B4D00DDE5E7 /* Quotes_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quotes_ViewController.m; sourceTree = "<group>"; };
+		A3F5263816973FB30091808C /* Hawaii1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hawaii1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 		A37375701676A4FF006557C0 = {
 			isa = PBXGroup;
 			children = (
+				A3F5263816973FB30091808C /* Hawaii1.jpg */,
 				A34FA6161679262E0043E6D7 /* Images */,
 				A37375851676A4FF006557C0 /* JessicaKosturko2 */,
 				A37375AC1676A500006557C0 /* JessicaKosturko2Tests */,
@@ -381,6 +384,7 @@
 				A324BB821696067D004D5B43 /* duck2.jpeg in Resources */,
 				A324BB831696067D004D5B43 /* duck1.jpeg in Resources */,
 				A324BB8516960AA3004D5B43 /* peru1.jpg in Resources */,
+				A3F5263916973FB30091808C /* Hawaii1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
