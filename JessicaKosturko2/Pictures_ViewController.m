@@ -13,7 +13,7 @@
 
 @end
 
-@implementation Pictures_ViewController{
+@implementation Pictures_ViewController {
     NSArray *arrayOfImages;
     NSArray *arrayOfDescription;
 }
@@ -30,8 +30,8 @@
 
 - (void)viewDidLoad
 {
-    [[self myCollectionView]setDelegate:self];
-    [[self myCollectionView]setDataSource:self];
+//    [[self myCollectionView]setDelegate:self];
+//    [[self myCollectionView]setDataSource:self];
     
     
     arrayOfImages = [[NSArray alloc] initWithObjects:@"duck.jpeg", @"duck1.jpeg", @"duck2.jpeg", @"duck3.jpeg",@"peru1.jpg", nil];
@@ -72,9 +72,9 @@
     
     NSLog(@"%@", [sender imageForState:UIControlStateNormal]);
     
-    _largeImage.image = [sender imageForState:UIControlStateNormal];
-    _largeImage.hidden = NO;
-    
+//    _largeImage.image = [sender imageForState:UIControlStateNormal];
+//    _largeImage.hidden = NO;
+//    
 
     
     

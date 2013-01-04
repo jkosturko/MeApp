@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Pictures_ViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
+@interface Pictures_ViewController : UICollectionViewController //<UICollectionViewDataSource, UICollectionViewDelegate>
+//@property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
-- (IBAction)tapCell:(UIButton *)sender;
+//- (IBAction)tapCell:(UIButton *)sender;
 
 
-@property (weak, nonatomic) IBOutlet UIImageView *largeImage;
+//@property (weak, nonatomic) IBOutlet UIImageView *largeImage;
 @end

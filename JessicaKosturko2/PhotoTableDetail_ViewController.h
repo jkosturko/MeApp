@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoTableDetail_ViewController : UIViewController
+@interface PhotoTableDetail_ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UICollectionView *myCollectionView;
 
 @property (strong, nonatomic) id detailItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+//- (IBAction)tapCell:(UIButton *)sender;
+
+
+- (IBAction)tapCell:(UIButton *)sender;
+
 
 @end
